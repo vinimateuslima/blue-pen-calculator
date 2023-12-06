@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+.calculator_container {
+    min-width: 300px;
+    height: 450px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.visor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    height: 160px;
+    background-color: var(--color-primary);
+    border-radius: 10px 10px 0px 0px;
+    color: var(--color-secondary);
+    padding: 0em 1em;
+    text-align: end;
+}
+
+.secondary_info_container {
+    width: 100%;
+    font-size: 1em;
+}
+
+.main_info_container {
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.panel {
+    padding: 1em;
+}
+
+.panel .keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+    column-gap: 1em;
+    justify-items: center;
+}
+
+.panel .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    font-size: 2.5em;
+    background-color: #D3D3D3;
+    color: var(--color-button-number);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
+    
+}
+
+.key, .key label {
+    cursor: pointer;
+}
+
+.key:active {
+    box-shadow: -2px -4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.key[data-type-key="symbol"]:active {
+    background-color: #1526bd;
+
+}
+
+#equal {
+    width: 100%;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.key[data-type-key="symbol"] {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
