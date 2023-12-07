@@ -1,152 +1,141 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4em;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+  height: 100vh;
 }
 
 .calculator_container {
-    min-width: 300px;
-    height: 450px;
-    background-color: #D9D9D9;
-    border-radius: 10px;
+  min-width: 300px;
+  height: 450px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
 }
 
 img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #manoel {
-    position: absolute;
-    width: 100px;
-    margin-top: -75px;
-    margin-left: 200px;
-    transition: transform 0.5s;
+  position: absolute;
+  width: 100px;
+  margin-top: -75px;
+  margin-left: 200px;
+  transition: transform 0.5s;
 }
 
 #manoel:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .visor {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: end;
-    height: 160px;
-    background-color: var(--color-primary);
-    border-radius: 10px 10px 0px 0px;
-    color: var(--color-secondary);
-    padding: 0em 1em;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  height: 160px;
+  background-color: var(--color-primary);
+  border-radius: 10px 10px 0px 0px;
+  color: var(--color-secondary);
+  padding: 0em 1em;
+  text-align: right;
 }
 
 .secondary_info_container {
-    width: 100%;
-    font-size: 1em;
+  width: 100%;
+  font-size: 1em;
 }
 
 .main_info_container {
-    width: 100%;
-    height: 10px;
-    font-size: 2.3em;
-
+  width: 100%;
+  height: 10px;
+  font-size: 2.3em;
 }
 
 #bottom_container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
 }
 
 #bottom_container button {
-    padding: 0px 0.8em;
-    height: 20px;
-    border: 1px solid var(--color-secondary);
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    font-size: 0.8em;
+  padding: 0px 0.8em;
+  height: 20px;
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 0.8em;
 }
 
 #bottom_container button:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary)
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 #bottom_container img {
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
 }
 
 .panel {
-    padding: 1em;
+  padding: 1em;
 }
 
 .panel .keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 1em;
-    column-gap: 1em;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1em;
+  column-gap: 1em;
+  justify-items: center;
 }
 
 .panel .key {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 49px;
-    height: 49px;
-    font-size: 2.5em;
-    background-color: #D3D3D3;
-    color: var(--color-button-number);
-    border-radius: 10px;
-    border: none;
-    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49px;
+  height: 49px;
+  font-size: 2.5em;
+  background-color: #d3d3d3;
+  color: var(--color-button-number);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
 }
 
 .key,
-.key label, button {
-    cursor: pointer;
+.key label,
+button {
+  cursor: pointer;
 }
 
 .key:active {
-    box-shadow: -2px -4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: -2px -4px 1px rgba(0, 0, 0, 0.4);
 }
 
 .key[data-type-key="symbol"]:active {
-    background-color: #1526bd;
-
+  background-color: #1526bd;
 }
-
-/*
-#equal {
-    width: 100%;
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-*/
 
 .key[data-type-key="symbol"] {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 footer {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
-footer nav li{
-    display: inline;
-    font-size: 0.8em;
-    
+footer nav li {
+  display: inline;
+  font-size: 0.8em;
 }
 
 footer li a {
-    color: var(--color-primary);
-    text-decoration: none;
+  color: var(--color-primary);
+  text-decoration: none;
 }
