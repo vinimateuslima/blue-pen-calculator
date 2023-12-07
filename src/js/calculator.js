@@ -37,8 +37,14 @@ addEventListener("click", function (e) {
 
   // Verificando se o evento click pegou um botão
   if (botao.className == "key") {
+    let caminho = botao.value;
+
+    if (botao.value == ".") {
+      caminho = "ponto";
+    }
+
     // Criar um novo elemento de áudio
-    const audio = new Audio(`assets/audio/${botao.value}.wav`);
+    const audio = new Audio(`assets/audio/${caminho}.wav`);
     tocarAudio(audio);
 
     //Verificar se o botão pressionado é o de Igual

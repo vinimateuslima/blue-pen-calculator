@@ -44,8 +44,11 @@ img {
 }
 
 .secondary_info_container {
+  display: flex;
   width: 100%;
-  font-size: 1em;
+  font-size: 0.8em;
+  opacity: 0.3;
+  margin-top: -10px;
 }
 
 .main_info_container {
