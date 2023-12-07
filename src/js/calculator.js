@@ -20,10 +20,10 @@ function tocarAudio (audio) {
 
 function muteDesmute() {
     if (audioMutado) {
-        sound.src = "../../assets/icon/sound_icon.svg";
+        sound.src = "assets/icon/sound_icon.svg";
         audioMutado = false;
     } else {
-        sound.src = "../../assets/icon/sound_muted_icon.svg";
+        sound.src = "assets/icon/sound_muted_icon.svg";
         audioMutado = true;
     }
 }
@@ -40,7 +40,7 @@ addEventListener('click', function (e) {
     if (botao.className == "key") {
 
         // Criar um novo elemento de áudio
-        const audio = new Audio(`../../assets/audio/${botao.value}.wav`);
+        const audio = new Audio(`assets/audio/${botao.value}.wav`);
         tocarAudio(audio);
 
         //Verificar se o botão pressionado é o de Igual
