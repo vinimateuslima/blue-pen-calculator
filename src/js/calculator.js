@@ -8,7 +8,7 @@ var substituir = false;
 var audioMutado = false;
 
 function manoelGomesAudio() {
-  const audio = new Audio(`../../assets/audio/Bomdemaizi.wav`);
+  const audio = new Audio(`../assets/audio/Bomdemaizi.wav`);
   tocarAudio(audio);
 }
 
